@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>afterglow</title>
+    <title>PESSTORE</title>
     <!-- This page carries its own styles and starts its own module, and it
          loads NOTHING else. That duplicates a little of style.css, and it is
          deliberate: every subresource is one more allocation and one more
@@ -12,10 +12,10 @@
          shared stylesheet; this one may not. -->
     <style>
       :root {
-        --bg: #0b0d10;
-        --panel: #0e1116;
-        --sunk: #11151b;
-        --line: #1e2732;
+        --bg: #031a18;
+        --panel: #0d211e;
+        --sunk: #0a1816;
+        --line: #1e4440;
         --fg: #c8ced8;
         --bright: #e6ebf2;
         --dim: #7c8798;
@@ -45,10 +45,13 @@
         text-align: center;
       }
       #brand b {
-        color: var(--bright);
         font-size: 15px;
         font-weight: 700;
         letter-spacing: 0.14em;
+        background: linear-gradient(90deg, #facc15, #f97316, #db2777);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
       }
       /* The live heap readout sits in the flow under the bar. Nothing here
          scrolls the document itself, so it stays in view without being
@@ -182,7 +185,7 @@
     <!-- jb.js owns the body class: .log while the step log is shown, .done or
          .fail once the chain has settled. The ids below are its contract --
          #ramBox, #msg, #state and #out are read by name. -->
-    <div id="brand"><b>afterglow</b></div>
+    <div id="brand"><b>PESSTORE</b></div>
     <div id="ramBox">RAM: checking...</div>
     <div id="spin"></div>
     <div id="msg">Restart your console</div>

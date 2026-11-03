@@ -16,7 +16,7 @@
 set -e
 cd "$(dirname "$0")"
 OUT=cache.appcache
-FILES="index.html jb.html style.css launch.js meme.png
+FILES="index.html jb.html style.css launch.js meme.png bg.jpg logo.png
        jb.js core.js mem.js int64.js ps4_offsets.js afterglow.js
        patchset-1400.bin patchset-1352.bin hen.bin goldhen.bin"
 

@@ -5,10 +5,10 @@
    page-kind class on <body> would not survive the first state change. */
 
 :root {
-  --bg: #0b0d10;
-  --panel: #0e1116;
-  --sunk: #11151b;
-  --line: #1e2732;
+  --bg: #031a18;
+  --panel: rgba(8, 20, 18, 0.72);
+  --sunk: #0d211e;
+  --line: #1e4440;
 
   --fg: #c8ced8;
   --bright: #e6ebf2;
@@ -32,7 +32,14 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100%;
-  background: var(--bg);
+  background:
+    linear-gradient(180deg, rgba(1,10,9,0.35) 0%, rgba(1,6,6,0.55) 60%, rgba(0,3,3,0.72) 100%),
+    url('bg.jpg');
+  background-color: var(--bg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   color: var(--fg);
   font: 15px/1.45 var(--sans);
 }
@@ -46,12 +53,22 @@ body {
   text-align: center;
 }
 
+#brand img {
+  width: 26px;
+  height: 26px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
 #brand b {
-  color: var(--bright);
   font-size: 15px;
   font-weight: 700;
   letter-spacing: 0.14em;
   vertical-align: middle;
+  background: linear-gradient(90deg, #facc15, #f97316, #db2777);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .byline {
